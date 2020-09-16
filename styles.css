@@ -1,0 +1,32 @@
+body {background-color: #000000;}
+header, footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+li {
+    border: solid red 1px;
+    display: inline-block;
+    padding: 10 px;
+    margin: 5px 40px:
+    background-color: black;
+    color: white;
+
+}
+section {
+    backgroubnd-color: black;
+    color: white;
+}
+img {
+    border: solid white 1px;
+    border-radius: 50 px;
+}
+
+p{
+    border: Solid white 1 px;
+    display: inline-block;
+    width: 700px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
