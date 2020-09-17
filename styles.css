@@ -1,17 +1,23 @@
 body {background-color: #000000;}
 header, footer {
-    background-color: red;
+    background-color:hsla(0, 100%, 50%, .9);
     color: white;
     text-align: center;
 }
-
+h2{
+    border: solid red, 1px;
+    background-color: darkgray;
+    color: black;
+    
+}
 li {
-    border: solid red 1px;
+    border: solid rgb(83, 2, 2) 1px;
     display: inline-block;
     padding: 10 px;
-    margin: 5px 40px:
-    background-color: black;
-    color: white;
+    margin: 5px 30px;
+    background-color: rgba(15, 14, 14, 0.25);
+    color: black;
+    font-weight: bolder;
 
 }
 section {
@@ -21,12 +27,16 @@ section {
 img {
     border: solid white 1px;
     border-radius: 50 px;
+    max-width: 50%;
+    height: auto;
+
 }
 
 p{
     border: Solid white 1 px;
     display: inline-block;
-    width: 700px;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 400px;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    margin-left: 5%; 
 }
