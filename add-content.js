@@ -1,29 +1,35 @@
-var userName = prompt('Please enter your name?');
-var trueBel = prompt('Do you believe in the paranormal?');
-var today = new Date();
-var hourNow = today.getHours();
-var greeting;
-var greeting2;
+'use strict'
 
-if (trueBel == 'no') {
-    document.write(`This is not the site you are looking for ${userName}`);
+function askUserName(){
+    var userName = prompt('Please enter your name?');
+    document.write(userName.toLowerCase() + ',');
 }
 
+function timeOfDay(){
+    var today = new Date();
+    var hourNow = today.getHours();
+    var greeting;
 
-else if (hourNow > 18) {
-    greeting = "Good Evening " + userName;
+    if (hourNow > 18){
+        greeting = 'Good Evening';
+        } else if (hourNow > 12){
+            greeting = 'Good Afternoon';
+        } else if (hourNow  > 0){
+            greeting = 'Good Morning';
+        }else {greeting = 'Howdy';
+        }document.write(greeting);
     }
-    else if (hourNow > 12){
-        greeting = "Good Afternoon " + userName;
+
+function gbFan(){
+    var trueBel = prompt('Do you believe in the paranormal?');
+    var Paranormal;    
+    
+    if (trueBel === 'no'){Paranormal = 'This is not the site you are looking for';
+    
+    }else {Paranormal = 'We are here to serve all your supernatural elimination needs!'}
+    document.write(Paranormal);
     }
-    else if (hourNow  > 0) {
-        greeting = "Good Morning " + userName;
-    }
-    else {gretting = "Howdy " + userName;
-    }
+    
 
-
-
-document.write(greeting);
-
-
+//
+//var greeting2;
